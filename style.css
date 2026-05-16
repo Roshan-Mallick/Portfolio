@@ -481,3 +481,8 @@ body {
     font-size: 11px;
     letter-spacing: 1px;
 }
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
