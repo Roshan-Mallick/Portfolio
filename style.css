@@ -631,3 +631,22 @@ footer a:hover { color: var(--text-2); }
   #section-list { display: none; }
   #scroll-progress-track { width: 2px; }
 }
+
+/* ── MOBILE: fix scroll indicator overlap ── */
+@media (max-width: 700px) {
+  .hero-scroll {
+    bottom: 1.25rem;
+    left: auto;
+    right: 1.5rem;
+    transform: none;
+    animation: none;
+    flex-direction: row;
+    gap: .4rem;
+    font-size: .62rem;
+  }
+  .hero-scroll::after {
+    width: 24px;
+    height: 1px;
+    background: linear-gradient(to right, var(--text-3), transparent);
+  }
+}
