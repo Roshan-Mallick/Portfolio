@@ -14,94 +14,111 @@
 </head>
 <body>
 
-<!-- ═══ LEFT SIDEBAR: progress bar + section list ═══ -->
+<!-- ═══ LEFT SIDEBAR ═══ -->
 <div id="left-sidebar">
   <div id="scroll-progress-track">
     <div id="scroll-progress-bar"></div>
   </div>
-<nav id="section-list">
-
-  <a href="#hero" class="sec-link" data-section="hero">hero</a>
-
-  <a href="#about" class="sec-link" data-section="about">about</a>
-
-  <a href="#projects" class="sec-link" data-section="projects">projects</a>
-
-  <a href="#github-activity" class="sec-link" data-section="github-activity"> activity </a>
-
-  <a href="#skills" class="sec-link" data-section="skills">skills</a>
-
-  <a href="#journey" class="sec-link" data-section="journey">journey</a>
-
-  <a href="#contact" class="sec-link" data-section="contact">contact</a>
-
-</nav>
+  <nav id="section-list">
+    <a href="#hero"            class="sec-link" data-section="hero">hero</a>
+    <a href="#about"           class="sec-link" data-section="about">about</a>
+    <a href="#projects"        class="sec-link" data-section="projects">projects</a>
+    <a href="#github-activity" class="sec-link" data-section="github-activity">activity</a>
+    <a href="#skills"          class="sec-link" data-section="skills">skills</a>
+    <a href="#journey"         class="sec-link" data-section="journey">journey</a>
+    <a href="#contact"         class="sec-link" data-section="contact">contact</a>
+  </nav>
 </div>
 
-<!-- ═══════════════ NAV ═══════════════ -->
+<!-- ═══ NAV ═══ -->
 <nav id="nav">
   <a href="#hero" class="nav-logo">rm<span>.</span></a>
   <ul class="nav-links">
-
-  <li>
-    <a href="#about">about</a>
-  </li>
-
-  <li>
-    <a href="#projects">projects</a>
-  </li>
-
-  <li>
-    <a href="#github-activity">activity</a>
-  </li>
-
-  <li>
-    <a href="#skills">skills</a>
-  </li>
-
-  <li>
-    <a href="#journey">journey</a>
-  </li>
-
-  <li>
-    <a href="#contact">contact</a>
-  </li>
-
-</ul>
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#github-activity">activity</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#journey">journey</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
   <a href="https://github.com/Roshan-Mallick" target="_blank" class="nav-cta">github ↗</a>
 </nav>
 
-<!-- ═══════════════ HERO ═══════════════ -->
+<!-- ═══ HERO — SPLIT LAYOUT ═══ -->
 <section id="hero">
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <div class="hero-badge"><span>Available for opportunities</span></div>
-    <h1 class="hero-name">Roshan<br><span class="dim">Mallick</span></h1>
-    <p class="hero-desc">
-      CSE student at <strong>Techno India University</strong>,  passionate about technology,
-       problem-solving, and continuous learning. Always curious, always building,
-       and constantly exploring new things..
-    </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn-primary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        View Projects
-      </a>
-      <a href="#contact" class="btn-ghost">Get in touch →</a>
+
+    <!-- Left: Text -->
+    <div class="hero-left">
+      <div class="hero-badge"><span>Available for opportunities</span></div>
+      <h1 class="hero-name">Roshan<br><span class="dim">Mallick</span></h1>
+      <p class="hero-role">CSE Student &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Security Researcher</p>
+      <p class="hero-desc">
+        CSE student at <strong>Techno India University</strong>, passionate about technology,
+        problem-solving, and continuous learning. Always curious, always building,
+        and constantly exploring new things.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+          </svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-ghost">Get in touch →</a>
+      </div>
     </div>
+
+    <!-- Right: Terminal card -->
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-filename">portfolio.c</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-comment">#include &lt;stdio.h&gt;</span></div>
+        <div><span class="t-comment">#include &lt;stdlib.h&gt;</span></div>
+        <div>&nbsp;</div>
+        <div><span class="t-keyword">typedef struct</span> <span class="t-plain">{</span></div>
+        <div>&nbsp;&nbsp;<span class="t-plain">char</span> <span class="t-dim">*name;</span></div>
+        <div>&nbsp;&nbsp;<span class="t-plain">char</span> <span class="t-dim">*role;</span></div>
+        <div>&nbsp;&nbsp;<span class="t-plain">char</span> <span class="t-dim">*location;</span></div>
+        <div>&nbsp;&nbsp;<span class="t-plain">int</span>&nbsp;&nbsp;<span class="t-dim">open_to_work;</span></div>
+        <div><span class="t-keyword">} Developer;</span></div>
+        <div>&nbsp;</div>
+        <div><span class="t-fn">int</span> <span class="t-keyword">main</span><span class="t-plain">() {</span></div>
+        <div>&nbsp;&nbsp;<span class="t-plain">Developer rm</span> <span class="t-dim">= {</span></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"Roshan Mallick"</span><span class="t-dim">,</span></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"CSE Student"</span><span class="t-dim">,</span></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"Kolkata, IN"</span><span class="t-dim">,</span></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-fn">1</span> <span class="t-comment">// available</span></div>
+        <div>&nbsp;&nbsp;<span class="t-dim">};</span></div>
+        <div>&nbsp;&nbsp;<span class="t-keyword">return</span> <span class="t-fn">0</span><span class="t-plain">;</span></div>
+        <div><span class="t-plain">}</span><span class="terminal-cursor"></span></div>
+      </div>
+    </div>
+
   </div>
   <div class="hero-scroll">scroll</div>
 </section>
 
-<!-- ═══════════════ ABOUT ═══════════════ -->
+<!-- ═══ ABOUT — SPLIT LAYOUT ═══ -->
 <section id="about">
   <div class="container">
     <div class="fade-in">
       <div class="section-label">01 — about</div>
-      <h2 class="section-title">Whoami</h2>
+      <h2 class="section-title">whoami</h2>
       <div class="divider"></div>
     </div>
-    <div class="about-grid fade-in">
+    <div class="about-split fade-in">
+
+      <!-- Left: bio text -->
       <div class="about-text">
         <p>I'm a first-year CS student at Techno India University, Kolkata. I got into programming
           through curiosity and stayed because of the problem-solving. These days I split my time
@@ -122,6 +139,8 @@
           <span class="tag">C programming</span>
         </div>
       </div>
+
+      <!-- Right: stat cards -->
       <div class="about-sidebar">
         <div class="about-stat">
           <div class="num">B.Tech</div>
@@ -136,11 +155,12 @@
           <div class="label">Building & learning in public</div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ PROJECTS ═══════════════ -->
+<!-- ═══ PROJECTS — HORIZONTAL CARDS ═══ -->
 <section id="projects">
   <div class="container">
     <div class="fade-in">
@@ -148,120 +168,99 @@
       <h2 class="section-title">Things I've built</h2>
       <div class="divider"></div>
     </div>
-  </div>
-  <div class="container projects-container">
-    <div class="projects-grid fade-in">
+    <div class="projects-list fade-in">
 
       <a class="project-card" href="https://github.com/Roshan-Mallick/RentDB" target="_blank">
-        <div class="project-top">
+        <div class="project-left">
           <span class="project-number">001</span>
-          <span class="project-arrow">↗</span>
+          <div class="project-status live">live</div>
         </div>
-        <div class="project-status live">live</div>
-        <div class="project-title">RentDB — CLI Rent Management System</div>
-        <p class="project-desc">A CLI tool built in C to manage rent payment entries and export them into a properly organized CSV. Came out of a real frustration — doing the same Excel work every month was slow. Added Google Drive auto-sync on Linux so data never gets lost.</p>
-        <div class="project-highlights">
-          <span class="highlight">CRUD operations</span>
-          <span class="highlight">CSV export</span>
-          <span class="highlight">Google Drive sync</span>
-          <span class="highlight">Makefile build</span>
+        <div class="project-body">
+          <div class="project-title">RentDB — CLI Rent Management System</div>
+          <p class="project-desc">A CLI tool built in C to manage rent payment entries and export them into a properly organized CSV. Came out of a real frustration — doing the same Excel work every month was slow. Added Google Drive auto-sync on Linux so data never gets lost.</p>
+          <div class="project-highlights">
+            <span class="highlight">CRUD operations</span>
+            <span class="highlight">CSV export</span>
+            <span class="highlight">Google Drive sync</span>
+            <span class="highlight">Makefile build</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">C</span>
+            <span class="project-tag">Linux</span>
+            <span class="project-tag">CLI</span>
+            <span class="project-tag">File I/O</span>
+            <span class="project-tag">Makefile</span>
+          </div>
         </div>
-        <div class="project-tags">
-          <span class="project-tag">C</span>
-          <span class="project-tag">Linux</span>
-          <span class="project-tag">CLI</span>
-          <span class="project-tag">File I/O</span>
-          <span class="project-tag">Makefile</span>
-        </div>
+        <span class="project-arrow">↗</span>
       </a>
 
       <a class="project-card" href="https://roshan-mallick.github.io" target="_blank">
-        <div class="project-top">
+        <div class="project-left">
           <span class="project-number">002</span>
-          <span class="project-arrow">↗</span>
+          <div class="project-status live">live</div>
         </div>
-        <div class="project-status live">live</div>
-        <div class="project-title">Developer Portfolio</div>
-        <p class="project-desc">This site. Minimal dark aesthetic, built from scratch with plain HTML, CSS, and JS — no frameworks, no templates. Deployed on GitHub Pages. Designed to feel like something a real developer built for themselves.</p>
-        <div class="project-highlights">
-          <span class="highlight">GitHub Pages</span>
-          <span class="highlight">zero dependencies</span>
+        <div class="project-body">
+          <div class="project-title">Developer Portfolio</div>
+          <p class="project-desc">This site. Minimal dark aesthetic, built from scratch with plain HTML, CSS, and JS — no frameworks, no templates. Deployed on GitHub Pages. Designed to feel like something a real developer built for themselves.</p>
+          <div class="project-highlights">
+            <span class="highlight">GitHub Pages</span>
+            <span class="highlight">zero dependencies</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">GitHub Pages</span>
+          </div>
         </div>
-        <div class="project-tags">
-          <span class="project-tag">HTML</span>
-          <span class="project-tag">CSS</span>
-          <span class="project-tag">JavaScript</span>
-          <span class="project-tag">GitHub Pages</span>
-        </div>
+        <span class="project-arrow">↗</span>
       </a>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ GITHUB ACTIVITY ═══════════════ -->
+<!-- ═══ GITHUB ACTIVITY ═══ -->
 <section id="github-activity">
-
   <div class="container">
-
     <div class="fade-in github-head">
-
       <div>
         <div class="section-label">03 — activity</div>
         <h2 class="section-title">GitHub Contributions</h2>
       </div>
-
-      <a
-        href="https://github.com/Roshan-Mallick"
-        target="_blank"
-        class="github-profile-link"
-      >
+      <a href="https://github.com/Roshan-Mallick" target="_blank" class="github-profile-link">
         @Roshan-Mallick ↗
       </a>
-
     </div>
-
-
-    <!-- REAL GITHUB STREAK CARD -->
     <div class="github-stats-wrapper fade-in">
-
       <img
         src="https://github-readme-streak-stats.herokuapp.com?user=Roshan-Mallick&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=222222&ring=c8ff00&fire=c8ff00&currStreakLabel=c8ff00"
         alt="GitHub streak stats"
         class="github-streak-card"
       />
-
     </div>
-
-
-    <!-- GITHUB HEATMAP -->
     <div class="github-graph fade-in">
-
       <img
         src="https://ghchart.rshah.org/c8ff00/Roshan-Mallick"
         alt="GitHub contribution graph"
         class="github-graph-img"
       />
-
     </div>
-
   </div>
-
 </section>
 
-<!-- ═══════════════ SKILLS ═══════════════ -->
+<!-- ═══ SKILLS — 4-COLUMN GRID ═══ -->
 <section id="skills">
   <div class="container">
     <div class="fade-in">
-      <div class="section-label">03 — skills</div>
+      <div class="section-label">04 — skills</div>
       <h2 class="section-title">What I work with</h2>
       <div class="divider"></div>
     </div>
-  </div>
-  <div class="container skills-container">
     <div class="skills-grid fade-in">
 
-      <!-- Languages: real PNGs from assets/languages/ -->
+      <!-- Languages -->
       <div class="skill-group">
         <div class="skill-group-name">Languages</div>
         <div class="skill-list">
@@ -280,7 +279,7 @@
         </div>
       </div>
 
-      <!-- Tools & Editors: real files from assets/tools_and_editors/ -->
+      <!-- Tools & Editors -->
       <div class="skill-group">
         <div class="skill-group-name">Tools & Editors</div>
         <div class="skill-list">
@@ -299,7 +298,7 @@
         </div>
       </div>
 
-      <!-- Systems & Cloud: assets/cloud_and_platforms/ -->
+      <!-- Systems & Cloud -->
       <div class="skill-group">
         <div class="skill-group-name">Systems & Cloud</div>
         <div class="skill-list">
@@ -339,11 +338,11 @@
   </div>
 </section>
 
-<!-- ═══════════════ JOURNEY ═══════════════ -->
+<!-- ═══ JOURNEY — TIMELINE ═══ -->
 <section id="journey">
   <div class="container">
     <div class="fade-in">
-      <div class="section-label">04 — journey</div>
+      <div class="section-label">05 — journey</div>
       <h2 class="section-title">How I got here</h2>
       <div class="divider"></div>
     </div>
@@ -404,11 +403,11 @@
   </div>
 </section>
 
-<!-- ═══════════════ CONTACT ═══════════════ -->
+<!-- ═══ CONTACT ═══ -->
 <section id="contact">
   <div class="container">
     <div class="fade-in">
-      <div class="section-label">05 — contact</div>
+      <div class="section-label">06 — contact</div>
       <h2 class="section-title">Let's talk</h2>
       <div class="divider"></div>
     </div>
