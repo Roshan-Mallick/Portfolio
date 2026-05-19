@@ -856,4 +856,6 @@ footer a:hover { color: var(--text-2); }
   #github-activity { padding: 5rem 0; }
   .github-head { flex-direction: column; gap: 1rem; }
   .github-graph { padding: 1rem; }
+  .hero-terminal { margin-bottom: 2rem;}
+  .hero-terminal {margin-bottom: 2rem;}
 }
